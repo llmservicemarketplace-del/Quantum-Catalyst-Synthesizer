@@ -1,0 +1,2 @@
+Quantum Catalyst Synthesizer installed.
+Health endpoint: /health

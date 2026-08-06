@@ -1,8 +1,9 @@
 __pycache__/
 *.pyc
 .env
-.vscode/
-.idea/
+.venv/
 *.sqlite
 *.db
 *.log
+dist/
+build/

@@ -1,0 +1,10 @@
+.git
+.github
+__pycache__
+*.pyc
+*.sqlite
+*.db
+.env
+docs
+helm
+tests

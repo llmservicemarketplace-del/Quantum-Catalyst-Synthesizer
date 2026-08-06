@@ -1,0 +1,11 @@
+﻿apiVersion: v2
+name: quantum-catalyst-synthesizer
+description: Measurement-driven quantum molecular and catalyst design platform
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+home: https://github.com/llmservicemarketplace-del/Quantum-Catalyst-Synthesizer
+sources:
+  - https://github.com/llmservicemarketplace-del/Quantum-Catalyst-Synthesizer
+maintainers:
+  - name: The New Faith Church and Co-op, Inc.

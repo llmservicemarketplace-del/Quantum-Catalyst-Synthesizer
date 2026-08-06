@@ -1,18 +1,25 @@
 # Quantum Catalyst Synthesizer
 
-By The New Faith Church and Co-op Inc.
+**By The New Faith Church and Co-op, Inc.**
 
-A measurement-driven quantum molecular design platform that builds quantum circuits using live IBM hardware calibration.
+This repository includes a minimal working FastAPI service, Linux container,
+Helm chart, and GitHub publishing workflows for IBM Cloud Catalog onboarding.
 
-The system:
+## Local verification
 
-- Pulls live T1/T2
-- Builds quantum circuits
-- Executes twice
-- Learns temporary discrepancy
-- Recalculates every gate
-- Executes final production run
+```powershell
+.\scripts\prepare-ibm-release.ps1
+```
 
-No lookup tables.
+## IBM Catalog settings
 
-All gate parameters are calculated from measurement.
+- Delivery method: Helm chart
+- Repository type: Public repository
+- Source URL: https://llmservicemarketplace-del.github.io/Quantum-Catalyst-Synthesizer
+- Software version: 0.1.0
+
+The production molecular and IBM Quantum engines can be connected behind the
+existing API without changing the deployment contract.
+
+Do not commit IBM Quantum tokens. The chart can reference an existing
+Kubernetes secret through `ibmQuantum.tokenSecretName`.

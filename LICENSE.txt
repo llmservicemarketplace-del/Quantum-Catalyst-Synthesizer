@@ -1,0 +1,6 @@
+Copyright (c) 2026 The New Faith Church and Co-op, Inc.
+All rights reserved.
+
+This software and documentation are proprietary. No permission is granted to
+copy, modify, distribute, sublicense, sell, or create derivative works except
+under a separate written agreement.

@@ -1,0 +1,31 @@
+name: Publish Helm repository
+on:
+  push:
+    branches: [main]
+    paths:
+      - "helm/**"
+      - ".github/workflows/publish-helm-pages.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  helm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/setup-helm@v4
+        with:
+          version: v4.2.3
+      - run: helm lint helm/quantum-catalyst-synthesizer
+      - shell: bash
+        run: |
+          rm -rf docs
+          mkdir -p docs
+          helm package helm/quantum-catalyst-synthesizer --destination docs
+          helm repo index docs --url "https://llmservicemarketplace-del.github.io/Quantum-Catalyst-Synthesizer"
+          touch docs/.nojekyll
+          printf '<h1>Quantum Catalyst Synthesizer Helm Repository</h1><p><a href="index.yaml">index.yaml</a></p>' > docs/index.html
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Publish Helm chart repository
+          file_pattern: docs
