@@ -3,7 +3,7 @@ entries:
   quantum-catalyst-synthesizer:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-08-06T18:36:28.694908-04:00"
+    created: "2026-08-06T19:24:30.4427635-04:00"
     description: Measurement-driven quantum molecular and catalyst design platform
     digest: ba8eb0eb1aa83f9213d73774f77187ed46f8ad33c36221f429661138d2bd4847
     home: https://github.com/llmservicemarketplace-del/Quantum-Catalyst-Synthesizer
@@ -14,6 +14,6 @@ entries:
     - https://github.com/llmservicemarketplace-del/Quantum-Catalyst-Synthesizer
     type: application
     urls:
-    - https://llmservicemarketplace-del.github.io/Quantum-Catalyst-Synthesizer/quantum-catalyst-synthesizer-0.1.0.tgz
+    - https://raw.githubusercontent.com/llmservicemarketplace-del/Quantum-Catalyst-Synthesizer/main/docs/quantum-catalyst-synthesizer-0.1.0.tgz
     version: 0.1.0
-generated: "2026-08-06T18:36:28.6934637-04:00"
+generated: "2026-08-06T19:24:30.4278421-04:00"
